@@ -1,7 +1,7 @@
 import { useEarthquakeData } from "./hooks/useEarthquakeData";
 import { ChartPanel } from "./components/chart/ChartPanel";
 import { DataTable } from "./components/table/DataTable";
-import { Card } from "./components/UI/Card";
+import { Card } from "./components/UI/card";
 // import { Loader } from "./components/UI/loader";
 import {Loader} from "./components/UI/Loader";
 import { AxisControls } from "./components/chart/AxisControls";
