@@ -20,8 +20,8 @@ export const ChartPanel = ({ data }) => {
     <ScatterChart width={500} height={400}>
       <CartesianGrid strokeDasharray="3 3" />
 
-      <XAxis dataKey={xAxis} />
-      <YAxis dataKey={yAxis} />
+      <XAxis dataKey={xAxis} label ={{value: xAxis, position: "insideBottom", offset: -5}} />
+      <YAxis dataKey={yAxis} label={{value: yAxis, angle: -90, position: "insideLeft"}}/>
 
       <Tooltip />
 

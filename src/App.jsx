@@ -22,7 +22,19 @@ function App() {
   const columns = Object.keys(data[0]);
 
   return (
-    <div className="p-6 grid grid-cols-2 gap-6 h-screen">
+
+    <div className="p-6 space-y-6">
+
+      <div className="bg-white shadow-sm p-4 text-center">
+        <h1 className="text-2xl font-bold text-gray-800">
+          Geographic Statistical Data: Visual Charts and Data Tables
+        </h1>
+        <p className="text-sm text-gray-500 mt-1">
+          Interactive visualization and dataset exploration
+        </p>
+      </div>
+
+      <div className="p-6 grid grid-cols-2 gap-6 h-screen">
       <Card title="Earthquake Chart">
         <AxisControls columns={columns} />
         <ChartPanel data={data} />
@@ -32,6 +44,9 @@ function App() {
         <DataTable data={data} />
       </Card>
     </div>
+    </div>
+
+    
   );
 }
 

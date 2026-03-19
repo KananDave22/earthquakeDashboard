@@ -17,8 +17,8 @@ export const useEarthquakeData = () => {
       const text = await res.text();
 
       const parsed = Papa.parse(text, {
-        header: true,
-        dynamicTyping: true,
+        header: true,    // ensuriing that the header also is parsed
+        dynamicTyping: true, // To ensure that it converts the string to the numeric values 
       });
 
       const cleaned = parsed.data.filter((d) => d.id && d.mag);
